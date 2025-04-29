@@ -1,0 +1,6 @@
+media_vendas = df_faturamento['valor'].mean()
+print(f"Média das vendas: R$ {media_vendas:,.2f}")
+
+
+
+
