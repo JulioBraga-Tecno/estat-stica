@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Dicionário de faturamento
+-- Dicionário de faturamento
 dict_faturamento = {
     'data_ref': [
         '2023-01-01', '2020-02-01', '2021-03-01', '2022-04-01', '2023-05-01',
