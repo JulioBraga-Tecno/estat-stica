@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Converter a coluna de data para datetime e formatar o mês/ano para exibição
+df_faturamento['data_ref'] = pd.to_datetime(df_faturamento['data_ref'])
+df_faturamento['mes_ano'] = df_faturamento['data_ref'].dt.strftime('%Y-%m')
+
+# Gráfico de barras
+plt.figure(figsize=(10, 5))
+plt.bar(df_faturamento['mes_ano'], df_faturamento['valor'], color='skyblue')
+plt.title('Faturamento por Mês (Barra Vertical)')
+plt.xlabel('Mês de Referência')
+plt.ylabel('Valor (R$)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
